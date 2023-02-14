@@ -61,7 +61,7 @@
     # Install all the necessary Node modules for the project,
     # using `npm`.
     - name: express ejs installation
-      command: sudo npm install ejs -g
+      command: sudo npm install ejs --save
       args:
         chdir: "{{ dest_path }}"
     - name: Install project dependencies
