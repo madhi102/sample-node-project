@@ -55,7 +55,9 @@
         name: nodejs
         state: present
     - name: Install Expressjs
-      command: sudo npm install express
+      command: sudo npm install express --save
+      args:
+        chdir: "{{ dest_path }}"
     # Install all the necessary Node modules for the project,
     # using `npm`.
     - name: express ejs installation
